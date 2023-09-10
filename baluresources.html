@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <link rel="icon" type="image/x-icon" href="c:\Users\user\Downloads\favicon (5).ico">
+  <link rel="stylesheet" href="baluresourcesstyles.css">
+  <style>
+    .logo{
+      text-align: center;
+      color:aliceblue;
+      }
+    .bla{
+        padding-left: 100px;
+    }
+    .cla{
+        padding-left: 100px;
+    }
+    .dla{
+        padding-left:50px;
+    }
+    
+    .column {
+  float: left;
+  width: 33.33%;
+  
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+ 
+}
+
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+}
+    /* Add custom CSS for fixing image size */
+    .course-card img {
+      width: 200px; /* Set the desired width */
+      height: 150px; /* Set the desired height */
+      object-fit: cover;
+    }
+    .lib {
+      padding-left: 60px;
+     
+    }
+    /* Add margin-right to login button container */
+    .login-container {
+      margin-right: 10px;
+      padding-left: 20px;
+    }
+    .register-container{
+      margin-right: 10px;
+      padding-right: 20px;}
+    .css-w1paca-NewregisterCTA {
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+    <div class="logo">
+      <h1>LELEARN</h1>
+    </div>
+      <ul class="w3-bar w3-white w3-card" id="myNavbar">
+        <li><a href="balu.html">Home</a></li>
+        <li><a href="https://manybooks.net/">Courses</a></li>
+        <li ><a href="baluresources.html">resources</a></li>
+        <div class="topnav">
+          <input type="text" placeholder="Search..">
+        </div>
+        <!-- Add a login container and apply margin-right -->
+        <div class="login-container">
+          <a href="balulogin.html">
+            <button type="button" class="e13239452 aquilla-button button css-w0paca-NewLoginCTA" action="login.html" target="_blank">
+            <span class="button--label-content css-0">Log in</span>
+          </button>
+        </div>
+        <div class="profile-icon">
+            <button type="button" class="man">
+            <span id="username"></span></button>
+          </div>
+      </ul>
+    </nav>
+  </header>
+
+  <h2>Welcome to the Dashboard</h2>
+  <div class="row">
+    <div class="column">
+  <a class="lib" href="c:\Users\user\Downloads\Learning_Python.pdf">
+    <img  class="bla" src="https://th.bing.com/th/id/OIP.S8OSsrskpocwgTpAHuuuLQHaJu?w=121&h=180&c=7&r=0&o=5&pid=1.7" alt="Dashboard Image">
+  </a>
+  <a class="lib" href="c:\Users\user\Downloads\Learning_Python.pdf">
+    <p class="pyt">python</p>
+</a>
+</div>
+<div class="column">
+    <a class="lib" href="c:\Users\user\Downloads\Learning_Python.pdf">
+<img class="cla" src="https://th.bing.com/th/id/OIP.S8OSsrskpocwgTpAHuuuLQHaJu?w=121&h=180&c=7&r=0&o=5&pid=1.7" alt="Dashboard Image">
+  </a>
+  <a class="lib" href="c:\Users\user\Downloads\Learning_Python.pdf">
+    <p class="java">Java</p>
+</a>
+</div>
+<div class="column">
+    <a class="lib" href="c:\Users\user\Downloads\Learning_Python.pdf">   
+     <img class="dla" src="https://th.bing.com/th/id/OIP.S8OSsrskpocwgTpAHuuuLQHaJu?w=121&h=180&c=7&r=0&o=5&pid=1.7" alt="Dashboard Image">
+      </a>
+      <a class="lib" href="c:\Users\user\Downloads\Learning_Python.pdf">
+        <p class="Clanguage">c lang</p>
+    </a>
+</div>
+  </div>
+
+  
+  
+  <footer>
+    <p>&copy; 2023 Your Company. All rights reserved.</p>
+  </footer>
+  
+</body>
+</html>

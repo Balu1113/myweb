@@ -1,0 +1,476 @@
+/* Google Font Link */
+section{
+  padding-top: 40px;
+  padding: center;
+}
+nav {
+  background-color:blueviolet;
+  padding: 0.3rem;
+  font-size: medium;
+  padding-bottom:10px;
+}
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.css-1koxx9i-LoginCTAWrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 16px;
+}
+
+@media only screen and (max-width: 47.95em) {
+  .css-1koxx9i-LoginCTAWrapper {
+      width:100%;
+      -webkit-box-pack: end;
+      -ms-flex-pack: end;
+      -webkit-justify-content: end;
+      justify-content: end;
+      gap: 8px;
+  }
+}
+  .css-1sk7ptd-NewLoginCTA {
+      padding: 12px 20px;
+      width: 104px;
+      height: 40px;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 16px;
+      white-space: nowrap;
+  }
+
+  @media only screen and (max-width: 47.95em) {
+      .css-1sk7ptd-NewLoginCTA {
+          padding:8px 14px;
+          height: 32px;
+          width: unset;
+          min-width: 64px;
+          max-width: 96px;
+      }
+  }
+  
+  .css-w0paca-NewLoginCTA {
+      padding: 10px 24px;
+      border-radius: 8px;
+      background: #FFFFFF;
+      border: 1px solid #3C4852;
+      font-size: 14px;
+      color: #3C4852;
+      line-height: 20px;
+      font-weight: 700;
+      min-width: 100px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      height: 40px;
+      cursor: pointer;
+      padding: 12px 20px;
+      width: 104px;
+      height: 40px;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 16px;
+      white-space: nowrap;
+  }
+  .css-w0paca-NewLoginCTA:hover,.css-w0paca-NewLoginCTA:focus {
+      background: #F7F9FB;
+  }
+
+  .css-w0paca-NewLoginCTA:active {
+      background: #E9EEF2;
+      border-color: #3C4852;
+  }
+
+  @media only screen and (max-width: 47.95em) {
+      .css-w0paca-NewLoginCTA {
+          padding:8px 14px;
+          height: 32px;
+          width: unset;
+          min-width: 64px;
+          max-width: 96px;
+      }
+  }
+  .css-e8l3el-NewLoginCTA {
+      padding: 10px 24px;
+      box-sizing: border-box;
+      border-radius: 8px;
+      background: #3C4852;
+      border: 1px solid #3C4852;
+      font-size: 14px;
+      color: #FFFFFF;
+      line-height: 20px;
+      font-weight: 700;
+      min-width: 100px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      height: 40px;
+      cursor: pointer;
+      padding: 12px 20px;
+      width: 104px;
+      height: 40px;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 16px;
+      white-space: nowrap;
+  }
+
+  .css-e8l3el-NewLoginCTA:hover,.css-e8l3el-NewLoginCTA:focus {
+      background: #364049;
+  }
+
+  .css-e8l3el-NewLoginCTA:active {
+      background: #1E2429;
+      border-color: #1E2429;
+  }
+
+  @media only screen and (max-width: 47.95em) {
+      .css-e8l3el-NewLoginCTA {
+          padding:8px 14px;
+          height: 32px;
+          width: unset;
+          min-width: 64px;
+          max-width: 96px;
+      }
+  }
+
+li {
+  margin: 0 1rem;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a.active {
+  font-weight: bold;
+}
+
+a:hover {
+  color: #f2f2f2;
+}
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)}
+  to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #e9e9e9;
+}
+
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the "active" element to highlight the current page */
+.topnav a.active {
+  background-color: #2196F3;
+  color: white;
+}
+
+/* Style the search box inside the navigation bar */
+.topnav input[type=text] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+
+/* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav input[type=text] {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;
+  }
+}
+
+header{
+    padding-bottom: 560px;
+    padding-right: 180px;
+    font-size: 40px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins" , sans-serif;
+}
+body{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #7d2ae8;
+  padding-left: 50px;
+  padding-bottom: -50px;
+  padding-top: -80px;
+}
+.container{
+  position: relative;
+  max-width: 850px;
+  width: 100%;
+  background: #fff;
+  padding: 40px 30px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  perspective: 2700px;
+}
+.container .cover{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 100%;
+  width: 50%;
+  z-index: 98;
+  transition: all 1s ease;
+  transform-origin: left;
+  transform-style: preserve-3d;
+}
+.container #flip:checked ~ .cover{
+  transform: rotateY(-180deg);
+}
+ .container .cover .front,
+ .container .cover .back{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.cover .back{
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+}
+.container .cover::before,
+.container .cover::after{
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #7d2ae8;
+  opacity: 0.5;
+  z-index: 12;
+}
+.container .cover::after{
+  opacity: 0.3;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+}
+.container .cover img{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: 10;
+}
+.container .cover .text{
+  position: absolute;
+  z-index: 130;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.cover .text .text-1,
+.cover .text .text-2{
+  font-size: 26px;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+}
+.cover .text .text-2{
+  font-size: 15px;
+  font-weight: 500;
+}
+.container .forms{
+  height: 100%;
+  width: 100%;
+  background: #fff;
+}
+.container .form-content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.form-content .loginform,
+.form-content .registrationform{
+  width: calc(100% / 2 - 25px);
+}
+.forms .form-content .title{
+  position: relative;
+  font-size: 24px;
+  font-weight: 500;
+  color: #333;
+}
+.forms .form-content .title:before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 25px;
+  background: #7d2ae8;
+}
+.forms .registrationform  .title:before{
+  width: 20px;
+}
+.forms .form-content .input-boxes{
+  margin-top: 30px;
+}
+.forms .form-content .input-box{
+  display: flex;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  margin: 10px 0;
+  position: relative;
+}
+.form-content .input-box input{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  padding: 0 30px;
+  font-size: 16px;
+  font-weight: 500;
+  border-bottom: 2px solid rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+.form-content .input-box input:focus,
+.form-content .input-box input:valid{
+  border-color: #7d2ae8;
+}
+.form-content .input-box i{
+  position: absolute;
+  color: #7d2ae8;
+  font-size: 17px;
+}
+.forms .form-content .text{
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+.forms .form-content .text a{
+  text-decoration: none;
+}
+.forms .form-content .text a:hover{
+  text-decoration: underline;
+}
+.forms .form-content .button{
+  color: #fff;
+  margin-top: 40px;
+}
+.forms .form-content .button input{
+  color: #fff;
+  background: #7d2ae8;
+  border-radius: 6px;
+  padding: 0;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.forms .form-content .button input:hover{
+  background: #5b13b9;
+}
+.forms .form-content label{
+  color: #5b13b9;
+  cursor: pointer;
+}
+.forms .form-content label:hover{
+  text-decoration: underline;
+}
+.forms .form-content .login-text,
+.forms .form-content .sign-up-text{
+  text-align: center;
+  margin-top: 25px;
+}
+.container #flip{
+  display: none;
+}
+@media (max-width: 100%) {
+  .container .cover{
+    display:flexbox;
+  }
+  .form-content .loginform,
+  .form-content .registrationform{
+    width: 100%;
+  }
+  .form-content .registrationform{
+    display:flexbox;
+  }
+  .container #flip:checked ~ .forms .registrationform{
+    display:flexbox;
+  }
+  .container #flip:checked ~ .forms .loginform{
+    display:flexbox;
+  }
+}
