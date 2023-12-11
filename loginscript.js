@@ -47,7 +47,7 @@ document
   .addEventListener("submit", function (event) {
     event.preventDefault();
 
-    window.location.href = "lelearn.html";
+    window.location.href = "balu.html";
   });
 
 function getLoggedInUsername() {
