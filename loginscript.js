@@ -1,60 +1,68 @@
-document
-  .getElementById("loginform")
-  .addEventListener("submit", function (event) {
-    event.preventDefault();
-    const username = document.getElementById("loginUsername").value;
-    const password = document.getElementById("loginPassword").value;
+document.addEventListener('DOMContentLoaded', function () {
+  const loginForm = document.getElementById('loginform');
+  const regUsernameInput = document.getElementById('regUsername');
+  const regPasswordInput = document.getElementById('regPassword');
+  const regConfirmPasswordInput = document.getElementById('regConfirmPassword');
 
-    // Check if username and password are valid
-    if (username === username && password === password) {
-      // Successful login
-      alert("Login Successful");
-    } else {
-      // Invalid login
-      alert("Invalid username or password");
-    }
-  });
+  const registeredUsers = [
+      { username: 'user1', password: 'password1' },
+      { username: 'user2', password: 'password2' },
+      // Add more users as needed
+  ];
 
-document
-  .getElementById("registrationform")
-  .addEventListener("submit", function (event) {
-    event.preventDefault();
-    const username = document.getElementById("regUsername").value;
-    const email = document.getElementById("regEmail").value;
-    const password = document.getElementById("regPassword").value;
-    const confirmPassword = document.getElementById("regConfirmPassword").value;
+  loginForm.addEventListener('submit', function (event) {
+      event.preventDefault();
 
-    // Check if all fields are filled
-    if (username && email && password && confirmPassword) {
-      // Check if passwords match
-      if (password === confirmPassword) {
-        // Successful registration
-        alert("Registration Successful");
-        // Reset the form
-        document.getElementById("registrationform").reset();
-      } else {
-        // Passwords don't match
-        alert("Passwords do not match");
-      }
-    } else {
-      // Missing fields
-      alert("Please fill in all fields");
-    }
-  });
+      const loginUsernameInput = document.getElementById('loginUsername');
+      const loginPasswordInput = document.getElementById('loginPassword');
 
-document
-  .getElementById("loginform")
-  .addEventListener("submit", function (event) {
-    event.preventDefault();
+      const enteredUsername = loginUsernameInput.value;
+      const enteredPassword = loginPasswordInput.value;
 
-    window.location.href = "balu.html";
-  });
+      // Check if the entered username and password match any registered user
+      const isValidUser = registeredUsers.some(user =>
+          user.username === enteredUsername && user.password === enteredPassword
+      );
 
-function getLoggedInUsername() {
-  return "username";
+      // ...
+
+if (isValidUser) {
+  alert('Login successful! Redirecting to the after login page.'); // Replace with your desired action
+
+  // Redirect to the after login page
+  window.location.replace("baluafterlogin.html"); // Use replace() for redirection
+} else {
+  alert('Invalid username or password. Please try again.');
 }
-const profileIcon = document.getElementById("profile-icon");
-const user = document.getElementById("username");
-const logggedInUsername = getLoggedInUsername();
-user.textContent = logggedInUsername;
-profileIcon.title = "Logged in as" + logggedInUsername;
+
+// ...
+
+
+      // Optional: Clear the form after the login attempt
+      loginUsernameInput.value = '';
+      loginPasswordInput.value = '';
+  });
+
+  // Additional validation for registration form
+  document.getElementById('registrationform').addEventListener('submit', function (event) {
+      event.preventDefault();
+
+      const enteredPassword = regPasswordInput.value;
+      const confirmedPassword = regConfirmPasswordInput.value;
+
+      if (enteredPassword !== confirmedPassword) {
+          alert('Passwords do not match. Please try again.');
+      } else {
+          // Add the new user to the registered users array
+          const newUsername = regUsernameInput.value;
+          registeredUsers.push({ username: newUsername, password: enteredPassword });
+
+          alert('Registration successful!'); // Replace with your desired action
+
+          // Optional: Clear the registration form after successful registration
+          regUsernameInput.value = '';
+          regPasswordInput.value = '';
+          regConfirmPasswordInput.value = '';
+      }
+  });
+});
