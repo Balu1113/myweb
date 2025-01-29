@@ -1,46 +1,11 @@
-<html lang="en"><head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Admin Dashboard</title>
-  <link rel="icon" type="image/x-icon" href="C:\Users\talat\Downloads\favicon (5).ico">
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
   <link rel="stylesheet" href="balustyle.css">
-  <style>
-    .logo{
-      text-align: center;
-      color:aliceblue;
-    }
-    /* Add custom CSS for fixing image size */
-    .course-card img {
-      width: 200px; /* Set the desired width */
-      height: 150px; /* Set the desired height */
-      object-fit: cover;
-    }
-    .lib {
-      padding-left: 60px;
-     
-    }
-    /* Add margin-right to login button container */
-    .login-container {
-      margin-right: 10px;
-      padding-left: 20px;
-    }
-    .register-container{
-      margin-right: 10px;
-      padding-right: 20px;}
-    .css-w1paca-NewregisterCTA {
-  background-color: #04AA6D;
-  border: none;
-  color: white;
-  padding: 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  border-radius: 8px;
-  cursor: pointer;
-}
-  </style>
 </head>
 <body>
   <header>
@@ -48,53 +13,54 @@
       <div class="logo">
         <h1>LELEARN</h1>
       </div>
-      <ul class="w3-bar w3-white w3-card" id="myNavbar">
+      <ul>
         <li><a href="#">Home</a></li>
         <li><a href="https://manybooks.net/">Courses</a></li>
-        <li><a href="baluresources.html">resources</a></li>
-        <div class="topnav">
-          <input type="text" placeholder="Search..">
-        </div>
-        <!-- Add a login container and apply margin-right -->
-        <div class="login-container">
+        <li><a href="baluresources.html">Resources</a></li>
+        <li>
+          <form action="/search" method="GET">
+            <input type="text" name="query" placeholder="Search..">
+            <button type="submit">Search</button>
+          </form>
+        </li>
+        <li class="login-container">
           <a href="balulogin.html">
-            <button type="button" class="e13239452 aquilla-button button css-w0paca-NewLoginCTA" action="login.html" target="_blank">
-            <span class="button--label-content css-0">Log in</span>
-          </button></a>
-        </div>
+            <button class="button">Log in</button>
+          </a>
+        </li>
       </ul>
     </nav>
-    <main>
-  <h2>Welcome to the Dashboard</h2>
-  <a class="lib" href="https://manybooks.net/">
-    <!-- ... -->
-    <img src="https://th.bing.com/th/id/OIP.r3nZbwnqTyefyCvLNyoH0gHaHa?w=178&amp;h=180&amp;c=7&amp;r=0&amp;o=5&amp;pid=1.7" alt="Dashboard Image">
-  </a>
-<h5>library</h5>
-  <section class="courses">
-    <h3>Popular Courses</h3>
-    <div class="course-card">
-       <a class="lib" href="https://youtu.be/_xQNeOTRyig">
-      <img  class="play-button" src="https://th.bing.com/th/id/OIP.zjrNr6oz4Zh8aUkE5-H0oQHaHa?w=218&amp;h=218&amp;c=7&amp;r=0&amp;o=5&amp;pid=1.7" alt="Course 1">
-     </a>
-      <h4>python</h4>
-      <p>Description of Course 1.</p>
-    </div>
-    <div class="course-card">
-      <a class="lib" href="https://youtu.be/GoXwIVyNvX0?si=uptlq6KFySBzIkef">
-      <img  class="play-button" src="https://th.bing.com/th/id/OIP.zjrNr6oz4Zh8aUkE5-H0oQHaHa?w=218&amp;h=218&amp;c=7&amp;r=0&amp;o=5&amp;pid=1.7" alt="Course 1">
-      </a>
-      <h4>java</h4>
-      <p>Description of Course 2.</p>
-    </div>
-    <!-- Add more course cards here -->
-  </section>
-    </main>
-  
+  </header>
+
+  <main>
+    <h2>Welcome to the Dashboard</h2>
+    <a class="lib" href="https://manybooks.net/">
+      <img src="https://th.bing.com/th/id/OIP.r3nZbwnqTyefyCvLNyoH0gHaHa?w=178&h=180&c=7&r=0&o=5&pid=1.7" alt="Library Image">
+    </a>
+    <h5>Library</h5>
+
+    <section class="courses">
+      <h3>Popular Courses</h3>
+      <article class="course-card">
+        <a class="lib" href="https://youtu.be/_xQNeOTRyig">
+          <img src="https://th.bing.com/th/id/OIP.zjrNr6oz4Zh8aUkE5-H0oQHaHa?w=218&h=218&c=7&r=0&o=5&pid=1.7" alt="Python Course">
+        </a>
+        <h4>Python</h4>
+        <p>Description of Course 1.</p>
+      </article>
+      <article class="course-card">
+        <a class="lib" href="https://youtu.be/GoXwIVyNvX0?si=uptlq6KFySBzIkef">
+          <img src="https://th.bing.com/th/id/OIP.zjrNr6oz4Zh8aUkE5-H0oQHaHa?w=218&h=218&c=7&r=0&o=5&pid=1.7" alt="Java Course">
+        </a>
+        <h4>Java</h4>
+        <p>Description of Course 2.</p>
+      </article>
+      <!-- Add more course cards here -->
+    </section>
+  </main>
+
   <footer>
     <p>© 2023 Your Company. All rights reserved.</p>
   </footer>
-  </header>
-
-
-</body></html>
+</body>
+</html>
